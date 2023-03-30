@@ -1,0 +1,18 @@
+#container{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+margin: auto;
+
+}
+#euro{
+    margin: 10px;
+}
+#container div{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+h3{
+    padding-left: 10px;
+}

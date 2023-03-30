@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Excercice 5</title>
+</head>
+
+<body>
+    <div id="container">
+        <div>valeur en euro</div>
+        <textarea name="montant" id="euro" cols="20" rows="2"></textarea>
+        <br>
+        <!-- <span>équivalent en franc</span><textarea name="conertit" id="franc" cols="12" rows="2"></textarea> -->
+    </div>
+    <script>
+
+
+        let input = document.getElementById("euro")
+        let resultat=document.createElement('h3')
+        input.addEventListener("input", function () {
+resultat.innerHTML=''
+        //    container.remove(resultat)
+            // let resultat=document.createElement('h3')
+            if (isNaN( input.value)) {
+                resultat.innerHTML='Il faute un valeur numérique'
+            }
+            else {
+                resultat.innerHTML=(input.value*6.55957).toFixed(2) 
+            }
+            let container=document.getElementById("container")
+            container.appendChild(resultat)
+        })
+
+
+    </script>
+</body>
+
+</html>
